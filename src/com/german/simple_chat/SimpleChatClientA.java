@@ -60,6 +60,7 @@ public class SimpleChatClientA {
             InputStreamReader streamReader = new InputStreamReader(sock.getInputStream());
             reader = new BufferedReader(streamReader);
             writer = new PrintWriter(sock.getOutputStream());
+            System.out.println();
             System.out.println("Networking established");
         } catch (IOException ex) {
             ex.printStackTrace();
